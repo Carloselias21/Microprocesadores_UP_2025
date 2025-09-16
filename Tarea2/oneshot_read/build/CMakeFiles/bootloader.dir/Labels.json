@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/project/Projects/adc/oneshot_read/build/CMakeFiles/bootloader"
+		},
+		{
+			"file" : "/project/Projects/adc/oneshot_read/build/CMakeFiles/bootloader.rule"
+		},
+		{
+			"file" : "/project/Projects/adc/oneshot_read/build/CMakeFiles/bootloader-complete.rule"
+		},
+		{
+			"file" : "/project/Projects/adc/oneshot_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+		},
+		{
+			"file" : "/project/Projects/adc/oneshot_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+		},
+		{
+			"file" : "/project/Projects/adc/oneshot_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+		},
+		{
+			"file" : "/project/Projects/adc/oneshot_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+		},
+		{
+			"file" : "/project/Projects/adc/oneshot_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+		},
+		{
+			"file" : "/project/Projects/adc/oneshot_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+		},
+		{
+			"file" : "/project/Projects/adc/oneshot_read/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bootloader"
+		],
+		"name" : "bootloader"
+	}
+}

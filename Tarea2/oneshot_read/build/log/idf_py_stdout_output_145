@@ -1,0 +1,13 @@
+Command: ninja flash
+[0/1] Re-running CMake...
+-- Minimal build - ON
+-- git rev-parse returned 'fatal: detected dubious ownership in repository at '/project'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /project'
+-- Could not use 'git describe' to determine PROJECT_VER.
+-- Building ESP-IDF components for target esp32
+-- Configuring incomplete, errors occurred!
+See also "/project/Projects/adc/oneshot_read/build/CMakeFiles/CMakeOutput.log".
+FAILED: build.ninja 
+/usr/bin/cmake --regenerate-during-build -S/project/Projects/adc/oneshot_read -B/project/Projects/adc/oneshot_read/build

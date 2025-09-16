@@ -1,0 +1,2 @@
+source /project/Projects/adc/oneshot_read/build/bootloader/gdbinit/symbols
+source /project/Projects/adc/oneshot_read/build/bootloader/gdbinit/connect

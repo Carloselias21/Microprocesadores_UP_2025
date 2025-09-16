@@ -1,0 +1,71 @@
+Command: ninja flash
+[1/10] Performing build step for 'bootloader'
+[1/1] cd /project/Projects/adc/oneshot_read/build/bootloader/esp-idf/esptool_py && /opt/esp-idf-tools/python_env/idf5.5_py3.10_env/bin/python /opt/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /project/Projects/adc/oneshot_read/build/bootloader/bootloader.bin
+Bootloader binary size 0x6680 bytes. 0x980 bytes (8%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/oneshot_read_main.c.obj
+/project/Projects/adc/oneshot_read/main/oneshot_read_main.c: In function 'app_main':
+/project/Projects/adc/oneshot_read/main/oneshot_read_main.c:87:9: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   87 |         .atten = EXAMPLE_ADC_ATTEN,
+      |         ^
+In file included from /opt/esp-idf/components/esp_adc/include/esp_adc/adc_oneshot.h:12,
+                 from /project/Projects/adc/oneshot_read/main/oneshot_read_main.c:13:
+/opt/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/project/Projects/adc/oneshot_read/main/oneshot_read_main.c:95:5: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+   95 |     bool do_calibration = example_adc_calibration_init(ADC_UNIT_1, EXAMPLE_ADC1_CHAN0, EXAMPLE_ADC_ATTEN, &adc1_cali_chan0_handle);
+      |     ^~~~
+/opt/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+[3/8] Linking C static library esp-idf/main/libmain.a
+[4/8] Generating esp-idf/esp_system/ld/sections.ld
+[5/8] Linking CXX executable oneshot_read.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.10.dev2
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated /project/Projects/adc/oneshot_read/build/oneshot_read.bin
+[7/8] cd /project/Projects/adc/oneshot_read/build/esp-idf/esptool_py && /opt/esp-idf-tools/python_env/idf5.5_py3.10_env/bin/python /opt/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /project/Projects/adc/oneshot_read/build/partition_table/partition-table.bin /project/Projects/adc/oneshot_read/build/oneshot_read.bin
+oneshot_read.bin binary size 0x293a0 bytes. Smallest app partition is 0x100000 bytes. 0xd6c60 bytes (84%) free.
+[7/8] cd /opt/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/opt/esp-idf -D "SERIAL_TOOL=/opt/esp-idf-tools/python_env/idf5.5_py3.10_env/bin/python;;/opt/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/project/Projects/adc/oneshot_read/build -P /opt/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32 -p /dev/ttyUSB0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 oneshot_read.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.10.dev2
+Serial port /dev/ttyUSB0
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: fc:b4:67:51:26:1c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x00039fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 26240 bytes to 16502...
+Writing at 0x00001000... (50 %)
+Writing at 0x000075e3... (100 %)
+Wrote 26240 bytes (16502 compressed) at 0x00001000 in 0.6 seconds (effective 374.2 kbit/s)...
+Hash of data verified.
+Compressed 168864 bytes to 92139...
+Writing at 0x00010000... (16 %)
+Writing at 0x0001b8d4... (33 %)
+Writing at 0x000214e8... (50 %)
+Writing at 0x00026f21... (66 %)
+Writing at 0x0002e274... (83 %)
+Writing at 0x00035379... (100 %)
+Wrote 168864 bytes (92139 compressed) at 0x00010000 in 2.4 seconds (effective 573.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1298.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

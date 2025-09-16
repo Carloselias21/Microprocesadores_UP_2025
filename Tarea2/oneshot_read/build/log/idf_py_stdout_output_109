@@ -1,0 +1,303 @@
+Command: /opt/esp-idf-tools/python_env/idf5.5_py3.10_env/bin/python /opt/esp-idf/tools/idf_monitor.py -p /dev/ttyUSB0 -b 115200 --toolchain-prefix xtensa-esp32-elf- --target esp32 --revision 0 /project/Projects/adc/oneshot_read/build/oneshot_read.elf /project/Projects/adc/oneshot_read/build/bootloader/bootloader.elf -m '/opt/esp-idf-tools/python_env/idf5.5_py3.10_env/bin/python' '/opt/esp-idf/tools/idf.py'
+��m5]�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6380
+ho 0 tail 12 room 4
+load:0x40078000,len:15916
+load:0x40080400,len:3860
+entry 0x40080638
+[0;32mI (29) boot: ESP-IDF v5.5-468-g02c5f2dbb9 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Sep  2 2025 05:18:24[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.1[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (38) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (42) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (50) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (59) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=08478h ( 33912) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=000184a0 vaddr=3ffb0000 size=02208h (  8712) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001a6b0 vaddr=40080000 size=05968h ( 22888) load[0m
+[0;32mI (115) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=12118h ( 74008) map[0m
+[0;32mI (141) esp_image: segment 4: paddr=00032140 vaddr=40085968 size=0721ch ( 29212) load[0m
+[0;32mI (152) esp_image: segment 5: paddr=00039364 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (159) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (159) boot: Disabling RNG early entropy source...[0m
+[0;32mI (171) cpu_start: Multicore app[0m
+[0;32mI (179) cpu_start: Pro cpu start user code[0m
+[0;32mI (179) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (179) app_init: Application information:[0m
+[0;32mI (179) app_init: Project name:     oneshot_read[0m
+[0;32mI (183) app_init: App version:      1[0m
+[0;32mI (187) app_init: Compile time:     Sep  2 2025 05:18:17[0m
+[0;32mI (192) app_init: ELF file SHA256:  8b6d603d7...[0m
+[0;32mI (196) app_init: ESP-IDF:          v5.5-468-g02c5f2dbb9[0m
+[0;32mI (201) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (205) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (209) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (213) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (219) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (224) heap_init: At 3FFB2AE0 len 0002D520 (181 KiB): DRAM[0m
+[0;32mI (230) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (235) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (240) heap_init: At 4008CB84 len 0001347C (77 KiB): IRAM[0m
+[0;32mI (247) spi_flash: detected chip: generic[0m
+[0;32mI (249) spi_flash: flash io: dio[0m
+[0;33mW (252) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (275) main_task: Calling app_main()[0m
+D (275) adc_oneshot: new adc unit0 is created
+[0;32mI (275) EXAMPLE: calibration scheme version is Line Fitting[0m
+[0;32mI (275) EXAMPLE: Calibration Success[0m
+[0;32mI (275) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (285) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (285) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (1295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (1295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (1295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (2295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (2295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (2295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (3295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (3295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (3295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (4295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (4295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (4295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (5295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (5295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (5295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (6295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (6295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (6295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (7295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (7295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (7295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (8295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (8295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (8295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (9295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (9295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (9295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (10295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (10295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (10295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (11295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (11295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (11295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (12295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (12295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (12295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (13295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (13295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (13295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (14295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (14295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (14295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (15295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (15295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (15295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (16295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (16295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (16295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (17295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (17295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (17295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (18295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (18295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (18295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (19295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (19295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (19295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (20295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (20295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (20295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (21295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (21295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (21295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (22295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (22295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (22295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (23295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (23295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (23295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (24295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (24295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (24295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (25295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (25295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (25295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (26295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (26295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (26295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (27295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (27295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (27295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (28295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (28295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (28295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (29295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (29295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (29295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (30295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (30295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (30295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (31295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (31295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (31295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (32295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (32295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (32295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (33295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (33295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (33295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (34295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (34295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (34295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (35295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (35295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (35295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (36295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (36295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (36295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (37295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (37295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (37295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (38295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (38295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (38295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (39295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (39295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (39295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (40295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (40295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (40295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (41295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (41295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (41295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (42295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (42295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (42295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (43295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (43295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (43295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (44295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (44295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (44295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (45295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (45295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (45295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (46295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (46295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (46295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (47295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (47295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (47295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (48295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (48295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (48295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (49295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (49295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (49295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (50295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (50295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (50295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (51295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (51295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (51295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (52295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (52295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (52295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (53295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (53295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (53295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (54295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (54295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (54295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (55295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (55295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (55295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (56295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (56295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (56295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (57295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (57295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (57295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (58295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (58295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (58295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (59295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (59295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (59295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (60295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (60295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (60295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (61295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (61295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (61295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (62295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (62295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (62295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (63295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (63295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (63295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (64295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (64295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (64295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (65295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (65295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (65295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (66295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (66295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (66295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (67295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (67295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (67295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (68295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (68295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (68295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (69295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (69295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (69295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (70295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (70295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (70295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (71295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (71295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (71295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (72295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (72295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (72295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (73295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (73295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (73295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (74295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (74295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (74295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (75295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (75295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (75295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (76295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (76295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (76295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (77295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (77295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (77295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (78295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (78295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (78295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (79295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (79295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (79295) EXAMPLE: Moisture: 17.70%[0m
+[0;32mI (80295) EXAMPLE: ADC1 Channel[5] Raw Data: 0[0m
+[0;32mI (80295) EXAMPLE: ADC1 Channel[5] Cali Voltage: 142 mV[0m
+[0;32mI (80295) EXAMPLE: Moisture: 17.70%[0m
