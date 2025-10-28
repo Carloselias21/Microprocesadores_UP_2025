@@ -1,0 +1,13 @@
+timestamp_utc,topic,payload
+2025-10-27T02:11:41.435386,u21/sensors/temperature,27.3
+2025-10-28T02:27:40.670864,u21/data/status,hello
+2025-10-28T02:27:57.048186,u21/sensors/temperature,27.3
+2025-10-28T02:28:13.568855,u21/sensors/temperature,34.5
+2025-10-28T02:30:05.659073,u21/sensors/gps,"{""lat"":20.7468, ""lon"":-103.4000}"
+2025-10-28T02:30:28.405192,u21/sensors/gps,"""lat"":20.7465, ""lon"":-103.3985"
+2025-10-28T02:30:35.983897,u21/sensors/temperature,39.5
+2025-10-28T02:30:57.526237,u21/sensors/gps,"{""lat"":20.7389, ""lon"":-103.4040}"
+2025-10-28T02:32:03.996531,u21/sensors/gps,"{""lat"":20.7370, ""lon"":-103.3985}"
+2025-10-28T02:32:14.372195,u21/sensors/temperature,19.2
+2025-10-28T02:33:11.944559,u21/sensors/gps,"{""lat"":20.7447, ""lon"":-103.4040}"
+2025-10-28T02:33:22.333155,u21/sensors/temperature,25.2
