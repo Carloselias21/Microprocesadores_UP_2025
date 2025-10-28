@@ -20,7 +20,7 @@
 
 #define MQTT_BROKER_URI "mqtt://io.adafruit.com:1883"
 #define MQTT_USERNAME   "Carlos321"   // << Tu usuario de Adafruit IO   
-#define MQTT_PASSWORD   "aio_HGvp50OpuTJgJSwGgLfQUOTV0zDi"        // << Tu AIO Key
+#define MQTT_PASSWORD   " "        // << Tu AIO Key
 
 // Prefijo único: u21
 #define AIO_USER        "Carlos321"   // Usado para concatenar los tópicos
